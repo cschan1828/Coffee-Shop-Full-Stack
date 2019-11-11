@@ -1,0 +1,344 @@
+{
+	"info": {
+		"_postman_id": "eda26b40-bdd2-473f-a37f-0b04986ee545",
+		"name": "manager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/drinks-detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks-detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks-detail"
+					]
+				},
+				"description": "Test drinks-detail API with manager role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				},
+				"description": "Test drinks API with manager role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks/5",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"5"
+					]
+				},
+				"description": "Test delete endpoint API for manager role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks/2",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Good to drink kun 002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"2"
+					]
+				},
+				"description": "Test drink patch API for manager role"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"dark_drink_redux2\",\n\t\"recipe\": [{\"color\": \"black\", \"name\": \"powder\", \"parts\": 1}, {\"color\": \"red\", \"name\": \"spicy\", \"parts\": 9}]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				},
+				"description": "Test post drink API with manager role."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFqUXpRVFExTVRJMVFVUkRSRFJGTXpKQlFqZENNa1pDTkRVNFFVWkNNekl5TkRFM00wSTJNQSJ9.eyJpc3MiOiJodHRwczovL2Rldi0tNDJkcnM2My5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWRhZjIzNDQ2YWVhNmIwYzY1NWVmNDhmIiwiYXVkIjoiQ29mZmVlX1Nob3AiLCJpYXQiOjE1NzE5Mjk3NjksImV4cCI6MTU3MjAxNjE2OSwiYXpwIjoibmdKZnVHbTB4Ym9neVB3NEhPdVpEUTRqbmpKMDZqb2giLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImRlbGV0ZTpkcmlua3MiLCJnZXQ6ZHJpbmtzLWRldGFpbCIsInBhdGNoOmRyaW5rcyIsInBvc3Q6ZHJpbmtzIl19.W6I2SwZ5MBiqT7QNMwGQbBvVlCzrAOJkCkH4lGYdnHZey0OhsizY6XWX8LmgbvgV6yG2Yb3vX43nj_wdey3o1Ew0jh2-Tn5elnhRO2AhpZrm73Bh2uuW0ka2CFJWFcyuA3HGqhnKnaG6KkSD6BMK5GkiVaxuZUuiMisWy23YAmzG__3fa3a_tw1CjD8JX9cRhAKKdgXKBRqURjLdY2xy4WOJlWekeoHyrer2aGig5OmS_LRqjzlU_SCHXFTxUO-mZfZjHiX-gPYm1tLPo4QbRiPFiN1mpDjCyZkaNPT91MKDlduyCWzG0TKwrSl_c-5QC6Ed8VrEiHrDmbInppu8SA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fbead279-ad56-44e7-a16b-b148d500b7df",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "bf3360ad-63b4-4e80-a53e-c46aa121ae63",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
+
+{
+	"info": {
+		"_postman_id": "c5939ffa-16b3-409d-aeea-df67bf0aeca7",
+		"name": "barista",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/drinks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks"
+					]
+				},
+				"description": "Test drinks API with barista role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/drinks-detail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks-detail",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks-detail"
+					]
+				},
+				"description": "Test drinks-detail with barista role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks/3",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"3"
+					]
+				},
+				"description": "Test delete API with barista role."
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/drinks/2",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Good to drink number 2\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/drinks/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"drinks",
+						"2"
+					]
+				},
+				"description": "Test drink patch API with barista role."
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6IlFqUXpRVFExTVRJMVFVUkRSRFJGTXpKQlFqZENNa1pDTkRVNFFVWkNNekl5TkRFM00wSTJNQSJ9.eyJpc3MiOiJodHRwczovL2Rldi0tNDJkcnM2My5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWRhZjAyYmM4MjA2YTgwZTIzNjU3MzQyIiwiYXVkIjoiQ29mZmVlX1Nob3AiLCJpYXQiOjE1NzE5Mjk5MzYsImV4cCI6MTU3MjAxNjMzNiwiYXpwIjoibmdKZnVHbTB4Ym9neVB3NEhPdVpEUTRqbmpKMDZqb2giLCJzY29wZSI6IiIsInBlcm1pc3Npb25zIjpbImdldDpkcmlua3MtZGV0YWlsIl19.E4cUpx-_S412CPsV0ZWPXGGPG2RQ-QsFCOidc8n10XPFW-6LYdJJCzlvrCsoALsG2V7BqputBBtYBWb3iowpqC0cwfydhKxv48ya92-Frt7vntAk6_4mg913vt4pWNpsaqA53mDosAhNhZSUebWPsBz8PkXh49wBFnxqKHnZ5Sm3e8qz-dbwvbA0KQP3NdqbZ0HkIivpZOJMLQUsVOqoiooYEf_1SyPLIfD5uMjZMOiANKBdRKlqm2W4zj3lLSsmZT4EM_ukGDrzF_dZceO7cvD0MJPsuiCttVwXC3wa28GAN9jwkalxzbIA4gmM4j1mMFKQYJRZA7H_7yEc87A2dA",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fcb4ceba-d3d1-48d0-a781-f9d52de2d50a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b85105f1-502b-4d31-a295-35790d52ac9a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

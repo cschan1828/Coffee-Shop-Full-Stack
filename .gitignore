@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.vscode
+
+# Distribution / packaging
+node_modules
+frontend/node_modules
+frontend/package-lock
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Example login_url
+login_url.txt

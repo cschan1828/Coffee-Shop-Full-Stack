@@ -16,5 +16,9 @@ This stack provides proper permission based on your roles using auth0. Visitors 
 ## Framework
 This project uses Flask as backend.
 
+## Reference
+This project is revised from this Udacity nano degree projects.
+https://github.com/udacity/FSND/tree/master/projects/03_coffee_shop_full_stack/starter_code
+
 ## License
 This code has been released under the [MIT License](LICENSE).

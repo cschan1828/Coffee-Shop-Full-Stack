@@ -29,6 +29,9 @@ def after_request(response):
 
 # db_drop_and_create_all()
 
+@app.route('/', methods=['GET'])
+def index():
+    return "Hello"
 
 @app.route('/drinks', methods=['GET'])
 def drinks():

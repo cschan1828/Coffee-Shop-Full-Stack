@@ -31,7 +31,11 @@ def after_request(response):
 
 @app.route('/', methods=['GET'])
 def index():
-    return "Hello"
+    return jsonify({
+        "success": True,
+        "message": "Welcome to the Coffee Shop!"
+    }), 200
+
 
 @app.route('/drinks', methods=['GET'])
 def drinks():
